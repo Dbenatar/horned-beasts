@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <>
-      <h2>{title}</h2>
+      <h1>Horned Beasts</h1>
       <img src={img} />
       <p></p>
     </>
