@@ -1,8 +1,25 @@
 body {
-
+  margin: 0 15%;
+  max-width: 1240px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: darkolivegreen;
 }
 
-image {
+h1 {
+text-align: center;
+text-decoration: underline;
+text-transform: uppercase;
+}
+
+img {
   height: 300px;
-  width: 300px;
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: darkgreen;
+  border: solid 2px darkgreen;
+  border-radius: 10px;
 }

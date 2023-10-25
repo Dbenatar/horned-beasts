@@ -9,9 +9,9 @@ export default function HornedBeast({image_url, title, description}) {
   return (
     <>
         <h2>{title}</h2>
-        <img src={image_url} />
+        <img src={image_url} onClick={handleClick} />
         <p>{description}</p>
-        <p onClick={handleClick}>❤{likes}</p>
+        <p>❤{likes}</p>
     </>
   );
 }
