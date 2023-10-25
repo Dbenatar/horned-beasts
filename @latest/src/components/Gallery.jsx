@@ -8,7 +8,7 @@ export default function Gallery(props) {
         {
           props.beasts.map((beast) => {
             return (
-              <HornedBeast img={beast.image_url} />
+              <HornedBeast img={beast.image_url}  title={beast.title} />
             )
           })
         }
