@@ -1,4 +1,4 @@
-
+import beastArr from '../Data'
 import HornedBeast from './HornedBeast'
 
 export default function Gallery(props) {
@@ -6,9 +6,10 @@ export default function Gallery(props) {
     <>
         <h2>Horned Beasts</h2>
         {
-          props.beasts.map((beast) => {
+          props.beasts.map((beastArr) => {
             return (
-              <HornedBeast img={beast.image_url}  title={beast.title} />
+              <HornedBeast img={beastArr.image_url} description={beastArr.description}  title={beastArr.title} />
+              
             )
           })
         }

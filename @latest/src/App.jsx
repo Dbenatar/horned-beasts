@@ -1,8 +1,9 @@
 import './App.css'
+import Header from './components/Header'
 import Gallery from './components/Gallery'
 import beastArr from './Data'
 import Footer from './components/Footer'
-import Header from './components/Header'
+
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <Gallery beast={beastArr}/>
+      <Gallery beasts={beastArr}/>
       <Footer />
     </>
   )

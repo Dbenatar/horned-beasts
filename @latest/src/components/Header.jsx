@@ -1,9 +1,11 @@
 export default function Header() {
   return (
     <>
+      <header>
       <h1>Horned Beasts</h1>
-      <img src={img} />
+      </header>
+   
       <p></p>
     </>
-  )
+  );
 }

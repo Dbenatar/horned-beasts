@@ -1,5 +1,5 @@
 
-export default function Footer(footer) {
+export default function Footer() {
   
   return (
     <>

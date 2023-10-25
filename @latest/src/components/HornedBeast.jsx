@@ -1,6 +1,6 @@
 
 
-export default function HornedBeast({img, description, title}) {
+export default function HornedBeast({img, title, description}) {
   return (
     <>
         <h2>{title}</h2>
