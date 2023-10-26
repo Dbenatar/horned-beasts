@@ -5,7 +5,7 @@ export default function Header() {
       <h1>Horned Beasts</h1>
       </header>
    
-      <p></p>
+    
     </>
   );
 }
