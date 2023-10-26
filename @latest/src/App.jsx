@@ -22,7 +22,7 @@ const [shownBeast, setShownBeast] = useState({});
       <Footer />
       {showModal && (
         <SelectedBeast shownBeast={shownBeast}
-        handleShowModal={handleShowModal}/>
+        handleShowModal={handleShowModal} />
       )}
     </>
   )
