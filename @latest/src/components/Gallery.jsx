@@ -1,4 +1,4 @@
-import data from '../Data.json'
+import data from '../assets/Data.json'
 import HornedBeast from './HornedBeast'
 
 export default function Gallery() {
