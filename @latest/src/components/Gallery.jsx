@@ -1,7 +1,11 @@
 // import data from '../assets/Data.json'
 import HornedBeast from './HornedBeast'
 
-export default function Gallery({ data, handleShowModal}) {
+export default function Gallery({ data, handleShowModal, horns}) {
+  const filteredHorns = data.filter(
+    (beast) => beast.horns == horns || horns === ""
+  );
+  
   return (
     <>
     {data.map((beasts) => {

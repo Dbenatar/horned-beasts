@@ -9,19 +9,24 @@ import SelectedBeast from './components/SelectedBeast'
 function App() {
 const [showModal, setShowModal] = useState(false);
 const [shownBeast, setShownBeast] = useState({});
+const [horns, setHorns] = useState("");
 
-// form, dropdown menu to view favourites
-const [form, setForm] = useState ({
-  horns: "",
-})
+// // form, dropdown menu to view favourites
+// const [form, setForm] = useState ({
+//   horns: "",
+// })
 
-function handleSubmit(event) {
-  event.preventDefault();
-}
+// function handleSubmit(event) {
+//   event.preventDefault();
+// }
 
   function handleShowModal(beast) {
     setShowModal(!showModal);
     setShownBeast(beast);
+  }
+
+  function handleFilter(event) {
+    setHorns(event.target.value);
   }
 
 function handleChange(event) {
@@ -31,11 +36,13 @@ function handleChange(event) {
   return (
     <div>
       <Header />
-      <form onSubmit={handleSubmit}>
-        <label>Number of horns</label>
-        <input type="number" />
-        <button>Submit</button>
-      </form>
+      <select onChange={handleFilter}>
+      <option value="">ALL</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="100">100</option>
+      </select>
       <Gallery data={data} handleShowModal={handleShowModal} />
       <Footer />
       {showModal && (
